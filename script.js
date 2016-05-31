@@ -1,9 +1,9 @@
-var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']; //исходный алфавит
+var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',' ',' ']; 
 //функция, сдвигающая алфавит на количество букв shift
 
 function shiftAlphabet(shift) {
     console.log(shift)
-    var shiftedAlphabet = ''; //новый алфавит 
+    var shiftedAlphabet = ''; //сдвинутый алфавит 
     for (var i = 0; i < alphabet.length; i++) {
         //console.log(i, alphabet[i+shift]);
         currentLetter = (alphabet[i + shift] === undefined) ? (alphabet[i + shift - alphabet.length]) : (alphabet[i + shift]); //Текущая буква со сдвигом, если выходим за рамки длины алфавита - берем с начала алфавита
