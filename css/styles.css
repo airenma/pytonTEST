@@ -1,0 +1,47 @@
+h1{
+    width:80%;
+    margin:auto;
+}
+
+.content{
+    width:80%;
+    margin:auto;
+}
+
+.left{
+    display: inline-block;
+}
+.right{
+    display:inline-block;
+}
+
+p{
+    display:inline-block;
+    margin:20px;
+}
+
+.center{
+    display:inline-block;
+    width:110px;
+    height: 50px;
+}
+
+input{
+    position: relative;
+    bottom:200px;
+    width:110px;
+    text-align: center;
+}
+
+button{
+    position:relative;
+    bottom:200px;
+    display:inline;
+    width:110px;
+    height: 20px;
+    margin-top:10px;
+}
+
+textarea{
+    resize: none;
+}

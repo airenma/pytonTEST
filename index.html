@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceasar script</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <h1>heading</h1>
+   
+   <div class="content">
+       <div class="left">
+           <p>
+              <textarea name="message" id="message" cols="50" rows="25" ></textarea>            </p>
+        </div><!--left END-->
+          
+          <div class="center">
+            
+             <input type="text" id="shift" value="1">
+             
+              <button id="encrypt" onclick='encrypt()'>Зашифровать</button>
+              <button id="decrypt" onclick='decrypt()'>Расшифровать</button>
+          </div><!--center END-->
+          
+           
+       <div class="right">
+           <p>
+              <textarea name="" id="cipher" cols="50" rows="25" ></textarea>            </p>
+        </div><!--right END-->
+           
+       </div><!--content END-->
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
