@@ -1,4 +1,4 @@
-var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']; 
+var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '!', ',', '.', '\'', '@', '*', '$', '^', '?', '+', '-', '%', '=', ' '];
 //функция, сдвигающая алфавит на количество букв shift
 
 function shiftAlphabet(shift) {
@@ -6,14 +6,14 @@ function shiftAlphabet(shift) {
     var shiftedAlphabet = ''; //сдвинутый алфавит 
     for (var i = 0; i < alphabet.length; i++) {
         //console.log(i, alphabet[i+shift]);
-        currentLetter = (alphabet[i + shift] === undefined) ? (alphabet[i + shift - alphabet.length]) : (alphabet[i + shift]); //Текущая буква со сдвигом, если выходим за рамки длины алфавита - берем с начала алфавита
+        currentLetter = (alphabet[i + shift] === undefined ) ? (alphabet[i + shift - alphabet.length]) : (alphabet[i + shift]); //Текущая буква со сдвигом, если выходим за рамки длины алфавита - берем с начала алфавита
 
         shiftedAlphabet = shiftedAlphabet.concat(currentLetter);
     }
     return shiftedAlphabet;
 } //end function shiftAlphabet
 
-console.log(shiftedAlphabet);
+
 
 function encrypt() {
     var message = document.getElementById('message').value;

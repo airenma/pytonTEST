@@ -15,37 +15,53 @@ h1{
 .content{
     width:76%;
     margin:auto;
-
+    box-sizing: border-box;
 
 .left{
     display: inline-block;
+    max-width: 45%;
 }
 .right{
     display:inline-block;
+    max-width: 45%;
 }
 
-
 .center{
+    position:relative;
+    bottom:200px;
     display:inline-block;
-    width:110px;
-    height: 50px;
-
+    width:10%;
+    height: 5%;
+    
 
 input{
-    position: relative;
-    bottom:200px;
-    width:110px;
     text-align: center;
+    width:50%;
+    margin-left:25%;
 }
 
 button{
-    position:relative;
-    bottom:200px;
     display:inline;
-    width:110px;
-    height: 20px;
+    width:100%;
+    height: 100%;
     margin-top:10px;
-}} //center END
+         color:rgb(0, 0, 0);
+         background:  rgba(255, 255, 255, 0.69);
+         border: 1px solid white;
+         border-radius: 10px;
+    padding:5px;
+    cursor: help;
+    
+}
+     button:hover{
+        color: #ffffff;
+        background:  rgba(0, 0, 0, 0.15);
+        border: 1px solid orange;
+         border-radius: 10px;
+        text-decoration: none;
+        text-transform: lowercase;
+    }
+    } //center END
 
 p{
     display:inline-block;
