@@ -40,4 +40,4 @@ function decrypt() {
         encryptedMessage = encryptedMessage.concat(alphabet[indexOfLetter]);
     }
     document.getElementById('cipher').value = encryptedMessage.toLowerCase();
-}
+} 
