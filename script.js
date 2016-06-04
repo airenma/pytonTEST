@@ -41,3 +41,4 @@ function decrypt() {
     }
     document.getElementById('cipher').value = encryptedMessage.toLowerCase();
 }
+//end
